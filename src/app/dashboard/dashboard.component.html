@@ -1,0 +1,37 @@
+
+
+      <div class="col-md-4">
+        <div class="panel">
+          <h3>Total Profiles</h3>
+          <br>
+          <div>45</div>
+        </div>
+        </div> 
+      <div class="col-md-4"> <div class="panel">
+          <h3>Available Profiles</h3>
+          <br>
+          <div>45</div>
+        </div></div>
+       <div class="col-md-4"><div class="panel">
+          <h3>Profiles Next week</h3>
+          <br>
+          <div>5</div>
+        </div>
+      
+       </div>
+
+
+       <h1>All Profiles</h1>
+
+        <ul class="all-profile"> 
+            <li class="profile" *ngFor="let profile of profiles">
+                <h4>{{profile.first_name + ',' + profile.last_name}}</h4>
+                <p>Employee id: {{profile.emp_id}}</p>
+                 <p>Company: {{profile.company}}</p>
+
+            </li>
+
+        </ul>
+
+
+    
